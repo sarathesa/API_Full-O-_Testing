@@ -1,0 +1,662 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-07T04:47:46.488Z",
+        "line": 3,
+        "name": "Get user Logtoken from login endpoint",
+        "description": "",
+        "id": "user-verify-login-api;get-user-logtoken-from-login-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 728000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User add header",
+            "match": {
+              "location": "com.stepdefinition.LoginStep.userAddHeader()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Add basic authentication for login",
+            "match": {
+              "location": "com.stepdefinition.LoginStep.userAddBasicAuthenticationForLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2039000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send \"POST\" request for login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.stepdefinition.LoginStep.userSendRequestForLoginEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "com.stepdefinition.LoginStep.userVerifyTheStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 392000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify successfull response body with message \"Login successfully\" and get the Logtoken saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login successfully\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.stepdefinition.LoginStep.userVerifySuccessfullResponseBodyWithMessageAndGetTheLogtokenSaved(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User verify Login Api",
+    "description": "",
+    "id": "user-verify-login-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC01_Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-07T04:47:49.899Z",
+        "line": 13,
+        "name": "User create Address",
+        "description": "",
+        "id": "verify-user-address-api-with-post-put-get-delete;user-create-address;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User add headers",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userAddHeaders()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add response body \"sarath\",\"kumar\",\"1234567890\",\"newApartment\",\"23\",\"3367\",\"101\",\"60009\",\"egmore\",\"Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sarath\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"kumar\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"1234567890\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"newApartment\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"23\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"3367\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"101\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"60009\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"egmore\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"Home\"",
+                  "offset": 103
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userAddResponseBody(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 720000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send \"POST\" request for with create address endpoints",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userSendRequestForWithCreateAddressEndpoints(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifyStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify successfull response body with Create message \"Address added successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address added successfully\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifySuccessfullResponseBodyWithCreateMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User get the Address id and saved",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userGetTheAddressIdAndSaved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T04:47:50.763Z",
+        "line": 24,
+        "name": "User Update Address",
+        "description": "",
+        "id": "verify-user-address-api-with-post-put-get-delete;user-update-address;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User add headers",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userAddHeaders()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User update response body \"Address-id\",\"sarath\",\"esa\",\"0987654321\",\"oldApartment\",\"23\",\"3367\",\"101\",\"5678\",\"egmore\",\"Office\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address-id\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"sarath\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"esa\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"0987654321\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"oldApartment\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"23\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"3367\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"101\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"5678\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"egmore\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"Office\"",
+                  "offset": 116
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userUpdateResponseBody(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 636000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User send \"PUT\" request for with Update address endpoints",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userSendRequestForWithUpdateAddressEndpoints(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifyStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User verify successfull response body with Update message \"Address updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address updated successfully\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifySuccessfullResponseBodyWithUpdateMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T04:47:51.458Z",
+        "line": 26,
+        "name": "User Get Address details",
+        "description": "",
+        "id": "verify-user-address-api-with-post-put-get-delete;user-get-address-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User add headers",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userAddHeaders()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 660000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User send \"GET\" request for with Get address endpoints",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userSendRequestForWithGetAddressEndpoints(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifyStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User verify successfull response body with message \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifySuccessfullResponseBodyWithMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T04:47:52.179Z",
+        "line": 32,
+        "name": "User Delete Address",
+        "description": "",
+        "id": "verify-user-address-api-with-post-put-get-delete;user-delete-address",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User add headers",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userAddHeaders()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User send payload",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userSendPayload()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 881000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User send \"DELETE\" request for with Delete address endpoints",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userSendRequestForWithDeleteAddressEndpoints(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifyStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User verify successfull response body with Delete message \"Address deleted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address deleted successfully\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifySuccessfullResponseBodyWithDeleteMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify User Address API with POST,PUT,GET,DELETE",
+    "description": "",
+    "id": "verify-user-address-api-with-post-put-get-delete",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC02_Address.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-07T04:47:53.099Z",
+        "line": 3,
+        "name": "User verify change password",
+        "description": "",
+        "id": "user-verify-change-password-api;user-verify-change-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User add headers",
+            "match": {
+              "location": "com.stepdefinition.AddressStep.userAddHeaders()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add response body \"currentPassword\",\"newPassword\", \"confirmPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"currentPassword\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"newPassword\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"confirmPassword\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.stepdefinition.ChangePasswordStep.userAddResponseBody(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 592000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send \"PUT\" request for with changePassord address endpoints",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.stepdefinition.ChangePasswordStep.userSendRequestForWithChangePassordAddressEndpoints(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "com.stepdefinition.AddressStep.userVerifyStatusCode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify successfull response body with changePassord message \"Your password has been updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your password has been updated\"",
+                  "offset": 65
+                }
+              ],
+              "location": "com.stepdefinition.ChangePasswordStep.userVerifySuccessfullResponseBodyWithChangePassordMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User verify Change Password API",
+    "description": "",
+    "id": "user-verify-change-password-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC03_ChangePassword.feature",
+    "tags": []
+  }
+]
